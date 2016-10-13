@@ -1,20 +1,22 @@
 # Exercise 6: Popular Baby Names Over Time
 
 # Read in the female baby names csv file into a variable called `female.names`
-
-
+my.data <- read.csv("file:///C:/Users/Justin/Documents/info201/m8-dataframes/exercise-6/data/female_names.csv")
+View(my.data)
 # Create a vector `year` as the year column of the dataset
-
+year <- my.data$year
 
 # Create a vector `name` as the name column of the datset
+name <- as.vector(my.data$name)
 # As in the last exercise, you'll need to convert this column to a vector
 
 
 # Create a vector `prop` as the proportion column of the dataset
-
+prop <- my.data$prop
 
 # Create a vector `names.2013` as your name vector where your year vector is 2013
 
+names.2013 <- my.data[year == 2013]
 
 # Create a vector `prop.2013` as the your prop vector where your year vecctor is 2013
 

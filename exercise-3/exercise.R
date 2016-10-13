@@ -1,5 +1,6 @@
 # Create a vector of 100 employees ("Employee 1", "Employee 2", ... "Employee 100)
 
+employees <- c(1:100)
 
 # Create a vector of 2014 salaries using the runif function
 

@@ -2,20 +2,21 @@
 
 # Load R's "USPersonalExpenditure" dataest using the `data()` function
 
+data("USPersonalExpenditure")
 
 # The variable USPersonalExpenditure is now accessible to you. Unfortunately, it's not a data.frame
 # Test this using the is.data.frame function
-
+is.data.frame(USPersonalExpenditure)
 
 # Luckily, you can simply pass the USPersonalExpenditure variable to the data.frame function
 # to convert it a data.farme
-
+data <- data.frame(USPersonalExpenditure)
 # Create a new variable by passing the USPersonalExpenditure to the data.frame function
 
 
 # What are the column names of your dataframe?
 
-
+print(data)
 # Why are they so strange?
 
 
